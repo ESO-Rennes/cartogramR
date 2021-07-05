@@ -6,9 +6,6 @@ Release: 2021-07-05
 
 <p><a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/Logo_cartogramR.png" style="max-width:200%;"></a></p>
 
-<p><a target="_blank" rel="noopener noreferrer"><img src="https://irmar.univ-rennes1.fr/sites/irmar.univ-rennes1.fr/files/irmar_0.png" width="50"></a></p>
-
-
 
 
 </br> <strong>What is a cartogram and what is cartogramR meant for?</strong>
@@ -20,6 +17,8 @@ The objective of this post is to present a new easy-to-use R package, called <i>
 </br> <strong>Development team</strong>
 
 <i>cartogramR</i> was developped by <a href="https://perso.univ-rennes2.fr/pierre-andre.cornillon" target="_new" rel="noopener"><strong>Pierre-André Cornillon</strong></a>  (UMR CNRS 6625 - IRMAR : Institut de Recherche Mathématique de Rennes - Université Rennes 2) and <a href="https://perso.univ-rennes2.fr/florent.demoraes" target="_new" rel="noopener"><strong>Florent Demoraes</strong></a> (UMR CNRS 6590 - ESO : Espaces et Sociétés - Université Rennes 2).
+
+<a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/Logo_irmar.png" width="60"></a>    <a target="_blank" rel="noopener noreferrer"><img src="logo_ESO.png" width="50"></a>
 
 
 
