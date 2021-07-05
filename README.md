@@ -38,13 +38,38 @@ Many many thanks to:
 - Timothée Giraud (UMS 2414 RIATE / CNRS Paris) for suggestions and careful reading.
 
 
+<br>
 <br><strong>FRANÇAIS-------------</strong>
 
-<strong>Qu'est-ce qu'un cartogramme et à quoi sert cartogramR ?</strong>
+
+
+
+</br> <strong>Qu'est-ce qu'un cartogramme et à quoi sert cartogramR ?</strong>
 
 Les cartogrammes sont un type de carte spéciﬁque sur lequel la taille des unités spatiales est proportionnelle à un poids statistique (nombre d'habitants, quantité de CO2 émise, etc.). Les cartogrammes sont utilisés depuis longtemps et sont aujourd'hui largement présents dans les livres, les journaux et sur le web. Au cours des dernières décennies, plusieurs méthodes ont été proposées pour construire des cartogrammes contigus et il existe aujourd'hui de nombreux algorithmes optimisant différentes composantes, telles que la précision statistique, la précision de forme et la précision topologique. Néanmoins, le temps d'exécution de ces algorithmes est resté longtemps un problème jusqu'à la sortie de l'algorithme de Gastner, Seguy et More (2018). Ces auteurs ont introduit un algorithme rapide utilisé pour modéliser la diffusion des  fluides et dont les équations sont plus faciles à résoudre par rapport aux méthodes précédentes. 
 
 L'objectif de ce billet est de présenter un nouveau package R facile à utiliser, appelé <i>cartogramR</i>, qui implémente ce dernier algorithme performant ainsi que deux autres algorithmes répandus (Gastner et Newman (2004) ; Dougenik, Chrisman et Niemeyer (1985)). Le package <i>cartogramR</i> fonctionne avec des objets sf, un modèle commun de stockage et d'accès aux objets géographiques formalisé à la fois par l'Open Geospatial Consortium et l'Organisation internationale de normalisation. 
+
+</br> <strong>Équipe de développement</strong>
+
+<i>cartogramR</i> a été développé par <a href="https://perso.univ-rennes2.fr/pierre-andre.cornillon" target="_new" rel="noopener"><strong>Pierre-André Cornillon</strong></a> (UMR CNRS 6625 - IRMAR : Institut de Recherche Mathématique de Rennes - Université Rennes 2) et <a href="https://perso. univ-rennes2.fr/florent.demoraes" target="_new" rel="noopener"><strong>Florent Demoraes</strong></a> (UMR CNRS 6590 - ESO : Espaces et Sociétés - Université Rennes 2).
+
+<a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/Logo_irmar.png" width="60"></a> <a target="_blank" rel="noopener noreferrer"><img src="logo_ESO.png" width="50"></a>.
+
+
+
+Lien pour télécharger le package <i>cartogramR</i> sur le CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
+
+Guide d'utilisation de <i>cartogramR</i> : https://cran.r-project.org/web/packages/cartogramR/cartogramR.pdf
+
+
+</br> <strong>Remerciements</strong>
+
+
+Un grand merci à :
+
+- Michael T. Gastner pour ses programmes de diffusion des fluides et sur lesquels cartogramR repose (fortement).
+- Timothée Giraud (UMS 2414 RIATE / CNRS Paris) pour ses suggestions et sa lecture attentive.
 
 
 
