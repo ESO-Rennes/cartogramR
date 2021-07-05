@@ -73,6 +73,8 @@ Un grand merci à :
 
 
 
+</br> <p><a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/carto_france_pop_doctors.png" width="750"></a></p>
+
 
 
 
