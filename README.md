@@ -1,9 +1,13 @@
 # cartogramR
 cartogramR: a R package for fast computing contiguous cartograms
 
+Release: 2021-07-05
+
 </br> <strong>What is a cartogram and what is cartogramR meant for?</strong>
 
-Cartograms are a speciﬁc type of map on which the size of spatial units is proportional to a statistical weight (number of inhabitants, amount of CO2 emitted, etc.). Cartograms have long been used and are nowadays widely present in books, newspapers and on the web. Over the last decades, several methods have been proposed to build contiguous cartograms and many algorithms exist today optimizing different components, such as statistical accuracy, shape accuracy, and topological accuracy. Nonetheless, the running time of these algorithms remained a problem for a long time until the algorithm of Gastner, Seguy, and More (2018) was released. These authors introduced a fast flow-based algorithm whose equations are easier to solve compared to previous methods. The objective of this post is to present a new easy-to-use R package, called <i>cartogramR</i>, which implements this last high-performance algorithm along with two other widespread algorithms (Gastner and Newman (2004); Dougenik, Chrisman, and Niemeyer (1985)). The <i>cartogramR</i> package works with sf objects, a common storage and access model of geographic feature formalized by both the Open Geospatial Consortium and the International Organization for Standardization. 
+Cartograms are a speciﬁc type of map on which the size of spatial units is proportional to a statistical weight (number of inhabitants, amount of CO2 emitted, etc.). Cartograms have long been used and are nowadays widely present in books, newspapers and on the web. Over the last decades, several methods have been proposed to build contiguous cartograms and many algorithms exist today optimizing different components, such as statistical accuracy, shape accuracy, and topological accuracy. Nonetheless, the running time of these algorithms remained a problem for a long time until the algorithm of Gastner, Seguy, and More (2018) was released. These authors introduced a fast flow-based algorithm whose equations are easier to solve compared to previous methods. 
+
+The objective of this post is to present a new easy-to-use R package, called <i>cartogramR</i>, which implements this last high-performance algorithm along with two other widespread algorithms (Gastner and Newman (2004); Dougenik, Chrisman, and Niemeyer (1985)). The <i>cartogramR</i> package works with sf objects, a common storage and access model of geographic feature formalized by both the Open Geospatial Consortium and the International Organization for Standardization. 
 
 </br> <strong>Development team</strong>
 
@@ -12,6 +16,8 @@ Cartograms are a speciﬁc type of map on which the size of spatial units is pro
 
 
 Link to download the package <i>cartogramR</i> on the CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
+
+<i>cartogramR</i> user guide: https://cran.r-project.org/web/packages/cartogramR/cartogramR.pdf
 
 </br> <strong>References</strong>
 
