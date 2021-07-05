@@ -3,15 +3,17 @@ cartogramR: a R package for fast computing contiguous cartograms
 
 </br> <strong>What is a cartogram and what is cartogramR meant for?</strong>
 
-Cartograms are a speciﬁc type of map on which the size of spatial units is proportional to a statistical weight (number of inhabitants, amount of CO2 emitted, etc.). Cartograms have long been used and are nowadays widely present in books, newspapers and on the web. Over the last decades, several methods have been proposed to build contiguous cartograms and many algorithms exist today optimizing different components, such as statistical accuracy, shape accuracy, and topological accuracy. Nonetheless, the running time of these algorithms remained a problem for a long time until the algorithm of Gastner, Seguy, and More (2018) was released. These authors introduced a fast flow-based algorithm whose equations are easier to solve compared to previous methods. The objective of this paper is to present a new easy-to-use R package, called <i>cartogramR</i>, which implements this last high-performance algorithm along with two other widespread algorithms (Gastner and Newman (2004); Dougenik, Chrisman, and Niemeyer (1985)). The <i>cartogramR</i> package works with sf objects, a common storage and access model of geographic feature formalized by both the Open Geospatial Consortium and the International Organization for Standardization. 
+Cartograms are a speciﬁc type of map on which the size of spatial units is proportional to a statistical weight (number of inhabitants, amount of CO2 emitted, etc.). Cartograms have long been used and are nowadays widely present in books, newspapers and on the web. Over the last decades, several methods have been proposed to build contiguous cartograms and many algorithms exist today optimizing different components, such as statistical accuracy, shape accuracy, and topological accuracy. Nonetheless, the running time of these algorithms remained a problem for a long time until the algorithm of Gastner, Seguy, and More (2018) was released. These authors introduced a fast flow-based algorithm whose equations are easier to solve compared to previous methods. The objective of this post is to present a new easy-to-use R package, called <i>cartogramR</i>, which implements this last high-performance algorithm along with two other widespread algorithms (Gastner and Newman (2004); Dougenik, Chrisman, and Niemeyer (1985)). The <i>cartogramR</i> package works with sf objects, a common storage and access model of geographic feature formalized by both the Open Geospatial Consortium and the International Organization for Standardization. 
 
 </br> <strong>Development team</strong>
 
-<i>cartogramR</i> was developped by Pierre-André Cornillon (UMR CNRS 6625 - IRMAR : Institut de Recherche Mathématique de Rennes - Université Rennes 2) et Florent Demoraes (UMR CNRS 6590 - ESO : Espaces et Sociétés - Université Rennes 2).
+<i>cartogramR</i> was developped by <a href="https://perso.univ-rennes2.fr/pierre-andre.cornillon" target="_new" rel="noopener"><strong>Pierre-André Cornillon</strong></a>  (UMR CNRS 6625 - IRMAR : Institut de Recherche Mathématique de Rennes - Université Rennes 2) and <a href="https://perso.univ-rennes2.fr/florent.demoraes" target="_new" rel="noopener"><strong>Florent Demoraes</strong></a> (UMR CNRS 6590 - ESO : Espaces et Sociétés - Université Rennes 2).
 
-Link to download the package <i>cartogramR</i>on the CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
 
-</br> <strong>REFERENCES</strong>
+
+Link to download the package <i>cartogramR</i> on the CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
+
+</br> <strong>References</strong>
 
 Bertin J (1967). Sémiologie graphique: les diagrammes, les réseaux, les cartes. Mouton & Gauthier-Villars, Paris-La Haye.
 
@@ -20,6 +22,8 @@ Bertin J (1983). Semiology of graphics: diagrams, networks, maps. The University
 Cauvin C, Escobar F, Serradj A (2007). Cartographie thématique 2 – Des transformations incontournables. Traité IGAT  – Information Géographique et Aménagement du Territoire ; Aspects fondamentaux de l’analyse spatiale. Hermès-Lavoisier.
 
 Cauvin C, Escobar F, Serradj A (2010).  Cartography and the Impact of the Quantitative Revolution. John Wiley & Sons, Inc. https://onlinelibrary.wiley.com/doi/book/10.1002/9781118558126.
+
+Demoraes F., Bouquet M., Mericskay B.,(2021) – How visually effective are animated cartograms? Potential improvements based on the example of segregation in Bogotá (1993-2005), M@ppemonde. https://hal.archives-ouvertes.fr/hal-03152983 
 
 Dorling D (1996).  “Area Cartograms: Their  Use and Creation.”   In Concepts and Techniques in Modern Geography, 59. University of East Anglia: Environmental Publications, Norwich. ISBN I-872464-09-2. URL http://www.dannydorling.org/wp-content/files/dannydorling_publication_id1448.pdf.
 
