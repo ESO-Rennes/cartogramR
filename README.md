@@ -4,7 +4,7 @@ cartogramR: a R package for fast computing contiguous cartograms
 Release: 2021-07-05
 
 
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Florent-Demoraes/cartogramR/blob/master/Logo_cartogramR.png"><img src="https://github.com/Florent-Demoraes/cartogramR/raw/master/Logo_cartogramR.png" style="max-width:200%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/Logo_cartogramR.png" style="max-width:200%;"></a></p>
 
 
 </br> <strong>What is a cartogram and what is cartogramR meant for?</strong>
