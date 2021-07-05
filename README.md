@@ -1,11 +1,17 @@
 # cartogramR
 cartogramR: a R package for fast computing contiguous cartograms
 
+</br> <strong>What is a cartogram and what is cartogramR meant for?</strong>
 
 Cartograms are a speciﬁc type of map on which the size of spatial units is proportional to a statistical weight (number of inhabitants, amount of CO2 emitted, etc.). Cartograms have long been used and are nowadays widely present in books, newspapers and on the web. Over the last decades, several methods have been proposed to build contiguous cartograms and many algorithms exist today optimizing different components, such as statistical accuracy, shape accuracy, and topological accuracy. Nonetheless, the running time of these algorithms remained a problem for a long time until the algorithm of Gastner, Seguy, and More (2018) was released. These authors introduced a fast flow-based algorithm whose equations are easier to solve compared to previous methods. The objective of this paper is to present a new easy-to-use R package, called cartogramR, which implements this last high-performance algorithm along with two other widespread algorithms (Gastner and Newman (2004); Dougenik, Chrisman, and Niemeyer (1985)). The cartogramR package works with sf objects, a common storage and access model of geographic feature formalized by both the Open Geospatial Consortium and the International Organization for Standardization. 
 
+</br> <strong>Development team</strong>
 
-</br> REFERENCES---------------
+cartogramR was developped by Pierre-André Cornillon (UMR CNRS 6625 - IRMAR : Institut de Recherche Mathématique de Rennes - Université Rennes 2) et Florent Demoraes (UMR CNRS 6590 - ESO : Espaces et Sociétés - Université Rennes 2).
+
+Link to download the package on the CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
+
+</br> <strong>REFERENCES</strong>
 
 Bertin J (1967). Sémiologie graphique: les diagrammes, les réseaux, les cartes. Mouton & Gauthier-Villars, Paris-La Haye.
 
