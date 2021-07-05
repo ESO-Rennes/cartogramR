@@ -23,6 +23,16 @@ Link to download the package <i>cartogramR</i> on the CRAN : https://cran.r-proj
 
 <i>cartogramR</i> user guide: https://cran.r-project.org/web/packages/cartogramR/cartogramR.pdf
 
+
+</br> <strong>Acknowledgements</strong>
+
+
+Many many thanks to:
+
+- Michael T. Gastner for his flow based cartogram programs on which cartogramR is (heavily) based.
+- Timothée Giraud (UMS 2414 RIATE / CNRS Paris) for suggestions and careful reading.
+
+
 </br> <strong>References</strong>
 
 Bertin J (1967). Sémiologie graphique: les diagrammes, les réseaux, les cartes. Mouton & Gauthier-Villars, Paris-La Haye.
