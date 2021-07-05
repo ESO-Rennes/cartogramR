@@ -6,6 +6,10 @@ Release: 2021-07-05
 
 <p><a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/Logo_cartogramR.png" style="max-width:200%;"></a></p>
 
+<p><a target="_blank" rel="noopener noreferrer"><img src="https://irmar.univ-rennes1.fr/sites/irmar.univ-rennes1.fr/files/irmar_0.png" width="50"></a></p>
+
+
+
 
 </br> <strong>What is a cartogram and what is cartogramR meant for?</strong>
 
