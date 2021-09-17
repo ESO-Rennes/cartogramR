@@ -23,6 +23,7 @@ The objective of this post is to present a new easy-to-use R package, called <i>
 <a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/Logo_irmar.png" width="60"></a>    <a target="_blank" rel="noopener noreferrer"><img src="logo_ESO.png" width="50"></a>
 
 
+Package source:
 
 Link to download the package <i>cartogramR</i> on the CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
 
