@@ -22,18 +22,26 @@ The objective of this post is to present a new easy-to-use R package, called <i>
 
 <a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/Logo_irmar.png" width="60"></a>    <a target="_blank" rel="noopener noreferrer"><img src="logo_ESO.png" width="50"></a>
 
+<br>
+Package sources:
+<br>- Linux: https://github.com/ESO-Rennes/cartogramR/raw/main/cartogramR_1.0-1.tar.gz
+<br>- Windows: https://github.com/ESO-Rennes/cartogramR/raw/main/cartogramR_0.9-9.zip
 
-Package source:
+<br>Note that if you install package from sources, you will need first to install FFTW (http://www.fftw.org/)
 
-Link to download the package <i>cartogramR</i> on the CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
+<i>cartogramR</i> user guide: https://hal.archives-ouvertes.fr/hal-03280009/document
 
-<i>cartogramR</i> user guide: https://cran.r-project.org/web/packages/cartogramR/cartogramR.pdf
+<br>
+Link to download the package <i>cartogramR</i> from the CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
+
+--> currently not available (2021 09 17). Will be fixed soon.
+
 
 
 </br> <strong>Acknowledgements</strong>
 
 
-Many many thanks to:
+Many thanks to:
 
 - Michael T. Gastner for his flow based cartogram programs on which cartogramR is (heavily) based.
 - Timothée Giraud (UMS 2414 RIATE / CNRS Paris) for suggestions and careful reading.
@@ -57,11 +65,21 @@ L'objectif de ce billet est de présenter un nouveau package R facile à utilise
 
 <a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/Logo_irmar.png" width="60"></a> <a target="_blank" rel="noopener noreferrer"><img src="logo_ESO.png" width="50"></a>.
 
+<br>
+Sources du package :
+<br>- Linux: https://github.com/ESO-Rennes/cartogramR/raw/main/cartogramR_1.0-1.tar.gz
+<br>- Windows: https://github.com/ESO-Rennes/cartogramR/raw/main/cartogramR_0.9-9.zip
 
+<br>Notez que si vous installez le package à partir des sources, vous aurez besoin d'installer au préalable FFTW (http://www.fftw.org/)
 
-Lien pour télécharger le package <i>cartogramR</i> sur le CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
+Guide d'utilisation de <i>cartogramR</i> : https://hal.archives-ouvertes.fr/hal-03280009/document
 
-Guide d'utilisation de <i>cartogramR</i> : https://cran.r-project.org/web/packages/cartogramR/cartogramR.pdf
+<br>
+
+Lien pour télécharger le package <i>cartogramR</i> depuis le CRAN : https://cran.r-project.org/web/packages/cartogramR/index.html
+
+--> actuellement non disponible (17/09/2021). Sera corrigé bientôt.
+
 
 
 </br> <strong>Remerciements</strong>
@@ -77,6 +95,69 @@ Un grand merci à :
 </br> <p><a target="_blank" rel="noopener noreferrer"><img src="https://github.com/ESO-Rennes/cartogramR/blob/main/carto_france_pop_doctors.png" width="750"></a></p>
 
 
+Script to create the above cartogram <br>(no extra package, just cartogramR and R base functions)
+---------
+
+###Population and number of general practitioners for 100,000 inhabitants in France in 2018####
+
+library(cartogramR)<br>
+data(france_dept)
+
+#compute cartogram based on population size
+
+france_cartogram <- cartogramR(france_dept, count="pop2018")
+
+
+#create a color palette
+
+ColorPalette <- c('#fee5d9','#fcae91','#fb6a4a','#cb181d')
+palette(ColorPalette)
+
+
+#cut the second variable into quantiles for choropleth map
+
+breaks <- quantile(france_cartogram$initial_data$n_gp_per100000)
+ngalpractFac <- cut(france_dept$n_gp_per100000, breaks, include.lowest=TRUE)
+
+
+#coerce cartogram to sf object
+
+france_cartogram <- as.sf(france_cartogram)
+
+
+#main plot
+
+plot(france_cartogram$geometry, 
+     main = "Population and number of general practitioners \nfor 100,000 inhabitants in France in 2018", 
+     col = ngalpractFac, add=FALSE)
+
+
+#bounding box and size
+
+bbox <- sf::st_bbox(as.sfc(france_cartogram))
+Deltax <- bbox["xmax"] -  bbox["xmin"]
+Deltay <- bbox["ymax"] -  bbox["ymin"]
+
+
+#sources and credits
+
+auth <- "Authors: F. Demoraes, P.-A. Cornillon"
+sources <- "Sources: INSEE (2018), DREES,\nASIP-Santé RPPS (2018)"
+desc <- "Distortion based on population size"
+ttext <- paste(auth, "|", sources, "-", desc)
+mtext(text = ttext, side = 4, line = -0.01, adj = 0, cex = 0.5, col = "grey50")
+text(bbox["xmax"]-0.15*Deltax, bbox["ymax"]-0.02*Deltay, "N\n???",cex = 1.2)
+
+
+#histogram
+
+op <- par(fig = c(0.03,0.3,0.1,0.3), mar = c(0,0,0,0), mgp=c(0,0.5,0), omi=c(0,0,0,0), new = TRUE, bty="n")
+hist(france_dept[["n_gp_per100000"]], breaks = breaks, freq = FALSE, col = 1:4, axes = F, ann=F,  border = "White")
+axis(side = 1, at = breaks, labels = round(breaks), cex.axis = 0.5, tick = FALSE, line = -1, col.axis = "Black")
+par(op)
+
+
+-----
 
 
 </br> <strong>References</strong>
