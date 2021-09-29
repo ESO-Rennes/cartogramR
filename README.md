@@ -117,6 +117,7 @@ palette(ColorPalette)
 #cut the second variable into quantiles for choropleth map
 
 breaks <- quantile(france_cartogram$initial_data$n_gp_per100000)
+
 ngalpractFac <- cut(france_dept$n_gp_per100000, breaks, include.lowest=TRUE)
 
 
