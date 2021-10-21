@@ -139,13 +139,13 @@ Cauvin C, Escobar F, Serradj A (2007). Cartographie thématique 2 – Des transf
 
 Cauvin C, Escobar F, Serradj A (2010).  Cartography and the Impact of the Quantitative Revolution. John Wiley & Sons, Inc. https://onlinelibrary.wiley.com/doi/book/10.1002/9781118558126.
 
-Demoraes F., Bouquet M., Mericskay B.,(2021) – How visually effective are animated cartograms? Potential improvements based on the example of segregation in Bogotá (1993-2005), M@ppemonde. https://hal.archives-ouvertes.fr/hal-03152983 
+Demoraes F., Bouquet M., Mericskay B.,(2021) – How visually effective are animated cartograms? Potential improvements based on the example of segregation in Bogotá (1993-2005), M@ppemonde. DOI:10.4000/mappemonde.5928 - https://hal.archives-ouvertes.fr/hal-03152983 
 
-Demoraes F., Bouquet M., Mericskay B.,(2021) – L’efficacité visuelle des cartogrammes animés en question - Une piste d’amélioration à travers l’exemple de la ségrégation à Bogotá (1993-2005), M@ppemonde. https://hal.archives-ouvertes.fr/hal-03029241 
+Demoraes F., Bouquet M., Mericskay B.,(2021) – L’efficacité visuelle des cartogrammes animés en question - Une piste d’amélioration à travers l’exemple de la ségrégation à Bogotá (1993-2005), M@ppemonde. DOI:10.4000/mappemonde.5813 - https://hal.archives-ouvertes.fr/hal-03029241 
 
 Dorling D (1996).  “Area Cartograms: Their  Use and Creation.”   In Concepts and Techniques in Modern Geography, 59. University of East Anglia: Environmental Publications, Norwich. ISBN I-872464-09-2. URL http://www.dannydorling.org/wp-content/files/dannydorling_publication_id1448.pdf.
 
-Dougenik JA, Chrisman NR, Niemeyer DR (1985). “AN  Algorithm  To Construct Continuous Area Cartograms.”   The Professional Geographer, 37(1), 75–81. https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0033-0124.1985.00075.x
+Dougenik JA, Chrisman NR, Niemeyer DR (1985). “An  Algorithm  To Construct Continuous Area Cartograms.”   The Professional Geographer, 37(1), 75–81. https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0033-0124.1985.00075.x
 
 Gastner MT,  Newman MEJ  (2004).   “Diffusion-Based Method  for  Producing Density-Equalizing Maps.”  Proceedings of the National Academy of Sciences, 101(20), 7499–7504. https://doi.org/10.1073/pnas.0400280101
 
