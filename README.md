@@ -128,6 +128,15 @@ par(op)
 
 -----
 
+</br> <strong>Animated cartograms / Cartogrammes animés</strong>
+
+cartogramR can also be used to generate animated cartograms. See example below. More info here: https://github.com/ESO-Rennes/Animated-Cartograms
+
+<i>cartogramR</i> peut être utilisé également pour produire des cartogrammes animés. Voir l'exemple ci-dessous. Plus d'info ici : https://github.com/ESO-Rennes/Animated-Cartograms
+
+
+![](https://i.imgur.com/NJuz5ez.gif)
+
 
 </br> <strong>References</strong>
 
