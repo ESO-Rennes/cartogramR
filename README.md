@@ -36,7 +36,7 @@ Link to download <i>cartogramR</i> from the CRAN : https://cran.r-project.org/we
 
 Many thanks to:
 
-- Michael T. Gastner for his flow based cartogram programs on which cartogramR is (heavily) based.
+- Michael T. Gastner for his flow based cartogram programs on which cartogramR is based.
 - Timothée Giraud (UMS 2414 RIATE / CNRS Paris) for suggestions and careful reading.
 
 
@@ -71,7 +71,7 @@ Guide d'utilisation de <i>cartogramR</i> : https://hal.archives-ouvertes.fr/hal-
 
 Un grand merci à :
 
-- Michael T. Gastner pour ses programmes de diffusion des fluides et sur lesquels cartogramR repose (fortement).
+- Michael T. Gastner pour ses programmes de diffusion des fluides et sur lesquels cartogramR repose.
 - Timothée Giraud (UMS 2414 RIATE / CNRS Paris) pour ses suggestions et sa lecture attentive.
 
 
@@ -128,11 +128,23 @@ par(op)
 
 -----
 
+</br> <strong>Other examples / Autres exemples</strong>
+
+Tutorial published within the framework of the <a href="https://transcarto.sciencesconf.org/" target="_new" rel="noopener">École Thématique TRANSCARTO (Transformations cartographiques)</strong></a> 18-22/10/2021 in Aussois (Savoy-France).
+ -  https://transcarto.github.io/rcartograms/TRANSCARTO_cartograms.html#les-algos-pour-les-cartogrammes-continus-avec-le-package-cartogramr <br> 
+
+Didacticiels et scripts préparés à l'occasion de <a href="https://transcarto.sciencesconf.org/" target="_new" rel="noopener">l'École Thématique TRANSCARTO (Transformations cartographiques)</strong></a> 18-22/10/2021 à Aussois (Savoie).
+-  https://transcarto.github.io/rcartograms/TRANSCARTO_cartograms.html#les-algos-pour-les-cartogrammes-continus-avec-le-package-cartogramr <br> 
+
+
+
 </br> <strong>Animated cartograms / Cartogrammes animés</strong>
 
-cartogramR can also be used to generate animated cartograms. See example below. More info here: https://github.com/ESO-Rennes/Animated-Cartograms
+cartogramR can also be used to generate animated cartograms. See example below. 
+ -  More info here: https://github.com/ESO-Rennes/Animated-Cartograms
 
-<i>cartogramR</i> peut être utilisé également pour produire des cartogrammes animés. Voir l'exemple ci-dessous. Plus d'info ici : https://github.com/ESO-Rennes/Animated-Cartograms
+<i>cartogramR</i> peut être utilisé également pour produire des cartogrammes animés. Voir l'exemple ci-dessous. 
+ -  Plus d'info ici : https://github.com/ESO-Rennes/Animated-Cartograms
 
 
 ![](https://i.imgur.com/NJuz5ez.gif)
