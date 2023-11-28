@@ -184,7 +184,7 @@ Pebesma E (2018). “Simple Features for R: Standardized Support for Spatial Vec
 
 Tennekes M (2018). “Tmap:  Thematic Maps in R.”  Journal of Statistical Software, 84(6). doi:10.18637/jss.v084.i06. https://www.jstatsoft.org/v84/i06/
 
-Thomas H., Demoraes F. (2023). Uncovering urban circadian pulses based on an animated cartogram: the example of Bogotá. International Journal of Cartography, doi:10.1080/23729333.2023.2207333⟩. https://hal.science/hal-04130267
+Thomas H., Demoraes F. (2023). Uncovering urban circadian pulses based on an animated cartogram: the example of Bogotá. International Journal of Cartography, doi:10.1080/23729333.2023.2207333. https://hal.science/hal-04130267
 
 Tobler W (2004). “Thirty Five Years of Computer Cartograms.”  Annals of the Association of American Geographers, 94(1), 58–73. https://onlinelibrary.wiley.com/doi/full/10.1111/j.1467-8306.2004.09401004.x
 
