@@ -132,14 +132,15 @@ par(op)
 
 - Tutorial published within the framework of the <a href="https://transcarto.github.io/rcartograms/TRANSCARTO_cartograms.html#les-algos-pour-les-cartogrammes-continus-avec-le-package-cartogramr" target="_new" rel="noopener">École Thématique TRANSCARTO (Transformations cartographiques)</strong></a> organised by Anne-Christine Bronner (Laboratoire SAGE, Strasbourg) and Nicolas Lambert (UMS RIATE, CNRS) on the 18-22/10/2021 in Aussois (Savoy-France).
 
-
 - Didacticiels et scripts préparés à l'occasion de <a href="https://transcarto.github.io/rcartograms/TRANSCARTO_cartograms.html#les-algos-pour-les-cartogrammes-continus-avec-le-package-cartogramr" target="_new" rel="noopener">l'École Thématique TRANSCARTO (Transformations cartographiques)</strong></a> organisée par Anne-Christine Bronner (Laboratoire SAGE, Strasbourg) et Nicolas Lambert (UMS RIATE, CNRS)le 18-22/10/2021 à Aussois (Savoie).
-
 
 - Tutorial published within the framework of the <a href="https://abronner.gitpages.huma-num.fr/test/FeuilleDeRouteR.html" target="_new" rel="noopener">Atelier : représenter autrement les territoires avec le cartogramme</strong></a> organised by Dominique Andrieu (MSH Val de Loire), Anne-Christine Bronner (Laboratoire SAGE, Strasbourg), Tarek Nasser and Gaëtan Palka (Laboratoire CEDETE) on the 11/06/2024 at the Université d'Orléans (France). 
 
-
 - Didacticiels et scripts préparés à l'occasion de <a href="https://abronner.gitpages.huma-num.fr/test/FeuilleDeRouteR.html" target="_new" rel="noopener">l'Atelier : représenter autrement les territoires avec le cartogramme</strong></a> organisé par Dominique Andrieu (MSH Val de Loire), Anne-Christine Bronner (Laboratoire SAGE, Strasbourg), Tarek Nasser et Gaëtan Palka (Laboratoire CEDETE) le 11/06/2024 à l'Université d'Orléans (France). 
+
+- Blog <a href="https://pandem-ic.com/mapping-our-unvaccinated-world/" target="_new" rel="noopener">Mapping our unvaccinated world </a> published by Philip Schellekens (Senior Economic Advisor at the World Bank Group) 
+
+- ![image](https://github.com/user-attachments/assets/ded2290d-4dcb-4b7a-bc0c-d64a70825563)
 
 
 </br> <strong>Animated cartograms / Cartogrammes animés</strong>
