@@ -139,7 +139,7 @@ palette(opal)
 
 - Didacticiels et scripts préparés à l'occasion de <a href="https://abronner.gitpages.huma-num.fr/test/FeuilleDeRouteR.html" target="_new" rel="noopener">l'Atelier : représenter autrement les territoires avec le cartogramme</strong></a> organisé par Dominique Andrieu (MSH Val de Loire), Anne-Christine Bronner (Laboratoire SAGE, Strasbourg), Tarek Nasser et Gaëtan Palka (Laboratoire CEDETE) le 11/06/2024 à l'Université d'Orléans (France). 
 
-- Blog <a href="https://pandem-ic.com/mapping-our-unvaccinated-world/" target="_new" rel="noopener">Mapping our unvaccinated world </a> published by Philip Schellekens (Senior Economic Advisor at the World Bank Group) 
+- Blog <a href="https://pandem-ic.org/mapping-our-unvaccinated-world/" target="_new" rel="noopener">Mapping our unvaccinated world </a> published by Philip Schellekens (Senior Economic Advisor at the World Bank Group) 
 
 - ![image](https://github.com/user-attachments/assets/ded2290d-4dcb-4b7a-bc0c-d64a70825563)
 
