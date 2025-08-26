@@ -1,7 +1,7 @@
 # cartogramR
 cartogramR: a R package for fast computing contiguous cartograms
 
-First release: 2021-07-05
+First release: 2021-07-05 <br>
 Latest release: 2025-05-05
 
 
