@@ -82,41 +82,41 @@ Un grand merci à :
 Script to create the above cartogram <br>(no extra package, just cartogramR and R base functions)
 ---------
 
-###Population and number of general practitioners for 100,000 inhabitants in France in 2018####
+###Population and number of general practitioners for 100,000 inhabitants in France in 2018####<br>
 library(cartogramR)
 data(france_dept)
 
-#compute cartogram based on population size
+#compute cartogram based on population size<br>
 france_cartogram <- cartogramR(france_dept, count = "pop2018")
 
-#cut the second variable (relative values) into quantiles for choropleth map
+#cut the second variable (relative values) into quantiles for choropleth map<br>
 breaks <- quantile(france_cartogram$cartogram$n_gp_per100000)
 classes <- cut(france_cartogram$cartogram$n_gp_per100000, breaks, include.lowest = TRUE)
 
-#create a color palette
+#create a color palette<br>
 ColorPalette <- c('#fee5d9','#fcae91','#fb6a4a','#cb181d')
 opal <- palette(ColorPalette)
 
 #adjust margin
 op <- par(oma = c(1, 1, 1.5, 1))
 
-#main plot
+#main plot<br>
 plot(france_cartogram$cartogram[1], 
      main = "", cex.main = 0.8, col = classes, border = "grey90", bg = "grey90")
 
-#add title
+#add title<br>
 mtext("Population and number of general practitioners \nfor 100,000 inhabitants in France in 2018", side = 3, line = -1, adj = 0.5, cex = 0.8, outer = TRUE)
 
-#north arrow
+#north arrow<br>
 mtext(text = "N\n\u2191", side = 3, line = 0, adj = 0.9, cex = 0.8)
 
-#sources and credits
+#sources and credits<br>
 auth <- "F. Demoraes, P.-A. Cornillon"
 sources <- "Sources: INSEE (2018), DREES,\nASIP-Santé RPPS (2018)"
 ttext <- paste(auth, "|", sources)
 mtext(text = ttext, side = 4, adj = 0, cex = 0.4, col = "grey50")
 
-#histogram
+#histogram<br>
 op <- par(fig = c(0.1,0.35,0.10,0.25), mar = c(0,0,0,0), new = TRUE) 
 hist(france_cartogram$cartogram$n_gp_per100000, breaks = breaks, 
      freq = FALSE, col = 1:4, axes = F, ann = F, border = "white")
