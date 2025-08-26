@@ -83,47 +83,47 @@ Script to create the above cartogram <br>(no extra package, just cartogramR and 
 ---------
 
 ###Population and number of general practitioners for 100,000 inhabitants in France in 2018####
-
-library(cartogramR)<br>
+library(cartogramR)
 data(france_dept)
 
-#compute cartogram based on population size<br>
-france_cartogram <- cartogramR(france_dept, count="pop2018")
+#compute cartogram based on population size
+france_cartogram <- cartogramR(france_dept, count = "pop2018")
 
-#create a color palette<br>
-ColorPalette <- c('#fee5d9','#fcae91','#fb6a4a','#cb181d')<br>
-palette(ColorPalette)
+#cut the second variable (relative values) into quantiles for choropleth map
+breaks <- quantile(france_cartogram$cartogram$n_gp_per100000)
+classes <- cut(france_cartogram$cartogram$n_gp_per100000, breaks, include.lowest = TRUE)
 
-#cut the second variable into quantiles for choropleth map<br>
-breaks <- quantile(france_cartogram$initial_data$n_gp_per100000)<br>
-ngalpractFac <- cut(france_dept$n_gp_per100000, breaks, include.lowest=TRUE)<br>
+#create a color palette
+ColorPalette <- c('#fee5d9','#fcae91','#fb6a4a','#cb181d')
+opal <- palette(ColorPalette)
 
-#coerce cartogram to sf object<br>
-france_cartogram <- as.sf(france_cartogram)
+#adjust margin
+op <- par(oma = c(1, 1, 1.5, 1))
 
-#main plot<br>
-plot(france_cartogram$geometry, 
-     main = "Population and number of general practitioners \nfor 100,000 inhabitants in France in 2018", 
-     col = ngalpractFac, add=FALSE)
+#main plot
+plot(france_cartogram$cartogram[1], 
+     main = "", cex.main = 0.8, col = classes, border = "grey90", bg = "grey90")
 
-#bounding box and size<br>
-bbox <- sf::st_bbox(as.sfc(france_cartogram))<br>
-Deltax <- bbox["xmax"] -  bbox["xmin"]<br>
-Deltay <- bbox["ymax"] -  bbox["ymin"]<br>
+#add title
+mtext("Population and number of general practitioners \nfor 100,000 inhabitants in France in 2018", side = 3, line = -1, adj = 0.5, cex = 0.8, outer = TRUE)
 
-#sources and credits<br>
-auth <- "Authors: F. Demoraes, P.-A. Cornillon"<br>
-sources <- "Sources: INSEE (2018), DREES,\nASIP-Santé RPPS (2018)"<br>
-desc <- "Distortion based on population size"<br>
-ttext <- paste(auth, "|", sources, "-", desc)<br>
-mtext(text = ttext, side = 4, line = -0.01, adj = 0, cex = 0.5, col = "grey50")<br>
-text(bbox["xmax"]-0.15*Deltax, bbox["ymax"]-0.02*Deltay, "N\↑",cex = 1.2)<br>
+#north arrow
+mtext(text = "N\n\u2191", side = 3, line = 0, adj = 0.9, cex = 0.8)
 
-#histogram<br>
-op <- par(fig = c(0.03,0.3,0.1,0.3), mar = c(0,0,0,0), mgp=c(0,0.5,0), omi=c(0,0,0,0), new = TRUE, bty="n")<br>
-hist(france_dept[["n_gp_per100000"]], breaks = breaks, freq = FALSE, col = 1:4, axes = F, ann=F,  border = "White")<br>
-axis(side = 1, at = breaks, labels = round(breaks), cex.axis = 0.5, tick = FALSE, line = -1, col.axis = "Black")<br>
+#sources and credits
+auth <- "F. Demoraes, P.-A. Cornillon"
+sources <- "Sources: INSEE (2018), DREES,\nASIP-Santé RPPS (2018)"
+ttext <- paste(auth, "|", sources)
+mtext(text = ttext, side = 4, adj = 0, cex = 0.4, col = "grey50")
+
+#histogram
+op <- par(fig = c(0.1,0.35,0.10,0.25), mar = c(0,0,0,0), new = TRUE) 
+hist(france_cartogram$cartogram$n_gp_per100000, breaks = breaks, 
+     freq = FALSE, col = 1:4, axes = F, ann = F, border = "white")
+axis(side = 1, at = breaks, labels = round(breaks), cex.axis = 0.4, 
+     tick = FALSE, line = -1.5)
 par(op)
+palette(opal)
 
 
 -----
